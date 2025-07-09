@@ -1805,6 +1805,7 @@ with tab1:
             import matplotlib.font_manager as font_manager
             from matplotlib.font_manager import FontProperties
             playerrequest = playername
+            
             #teamname = 'England U21'
             #opponentname = 'Azerbaijan U21'
             title_font = FontProperties(family='Tahoma', size=15)
@@ -1822,7 +1823,7 @@ with tab1:
             playercarry = playercarry.loc[playercarry['y_diff']<25]
             playercarry = playercarry[~(((playercarry['x'] == 0) & (playercarry['end_x'] == 0)) | ((playercarry['y'] == 0) & (playercarry['end_y'] == 0)))]
     
-            #teamname = anderson.iloc[0]['team_name']
+            teamname = anderson.iloc[0]['team_name']
             teamlogoid = teamdata.loc[teamdata['name'] == teamname, 'id'].values[0]
             opponentname2 = teamdata.loc[teamdata['name'] != teamname, 'name'].values[0]
     
