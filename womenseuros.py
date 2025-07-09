@@ -23,10 +23,10 @@ import matplotlib.patches as patches
 from PIL import Image
 
 wtaimaged = Image.open("wtatransnew.png")
-leagueimage = Image.open("loilogo.png")
+leagueimage = Image.open("womenseuros.png")
 
-st.set_page_config(page_title="WT Analysis - League of Ireland", layout="wide")
-st.title("WT Analysis - LOI Visuals")
+st.set_page_config(page_title="WT Analysis - UEFA Women's Euros", layout="wide")
+st.title("WT Analysis - UEFA Women's Euros Visuals")
 
 # Inputs
 import pandas as pd
@@ -40,7 +40,7 @@ import json
 import re
 import pandas as pd
 
-dataafterleague = '3zoeegue4xtul58c8ksahcjdg'
+dataafterleague = 'efe1letb2e4cwsvu7txqalslw'
 headers = {
     'Referer': 'https://www.scoresway.com/',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
@@ -1717,12 +1717,13 @@ if matchlink:
         starting_lineups = starting_lineups.drop_duplicates(subset=['player_id', 'match_id'], keep='first')
 
         TextColor = "white"
-        BackgroundColor = "#191919"
-        PitchColor = "#79fe00"
-        PitchLineColor = "white"
-        SonarPass = "green"
-        SonarCarry = "orange"
-        HullColor = "#191919"
+        BackgroundColor = "#973d52"
+        PitchColor = "#e2e2e3"
+        PitchLineColor = "black"
+        SonarPass = "#e2e2e3"
+        SonarCarry = "#f3da15"
+        HullColor = "#ebf3fc"
+
         player_list = starting_lineups["player_name"].dropna().unique().tolist()
 
         player_options = ["-- Select a player --"] + sorted(player_list)
