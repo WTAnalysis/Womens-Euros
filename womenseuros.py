@@ -2005,7 +2005,7 @@ with tab1:
             #                     alpha=1, interpolation='hanning')
             ax_image = add_image(teamimage, fig, left=0.5475, bottom=-0.0505, width=0.0525,
                                  alpha=1, interpolation='hanning')
-            ax_image = add_image(leagueimage, fig, left=0.482, bottom=-0.029, width=0.06,
+            ax_image = add_image(leagueimage, fig, left=0.492, bottom=-0.029, width=0.04,
                                  alpha=1, interpolation='hanning')
             ax_image = add_image(wtaimaged, fig, left=0.4275, bottom=-0.029, width=0.05,
                                  alpha=1, interpolation='hanning')
